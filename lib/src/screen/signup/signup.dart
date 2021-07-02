@@ -62,8 +62,37 @@ class _SignUpWidgetState extends State<SignUpWidget> {
                   child: Column(
                     children: [
                       SizedBox(
+                        height: 25.0,
+                      ),
+                      Text(
+                        'SignUp',
+                        style: Theme.of(context).textTheme.headline3,
+                      ),
+                      SizedBox(
                         height: 20.0,
                       ),
+                      TextField(
+                        style: TextStyle(
+                          color: Theme.of(context).accentColor,
+                        ),
+                        keyboardType: TextInputType.emailAddress,
+                        decoration: InputDecoration(
+                            hintText: 'EmailAddress,',
+                            hintStyle:
+                                Theme.of(context).textTheme.bodyText1!.merge(
+                                      TextStyle(
+                                        color: Theme.of(context).accentColor,
+                                      ),
+                                    ),
+                            enabledBorder: UnderlineInputBorder(
+                              borderSide: BorderSide(
+                                color:
+                                    Theme.of(context).accentColor.withOpacity(
+                                          0.2,
+                                        ),
+                              ),
+                            )),
+                      )
                     ],
                   ),
                 ),
