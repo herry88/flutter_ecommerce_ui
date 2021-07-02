@@ -1,103 +1,204 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutteruinew/config/icons.dart';
 
 class SignUpWidget extends StatefulWidget {
-  const SignUpWidget({Key? key}) : super(key: key);
-
   @override
   _SignUpWidgetState createState() => _SignUpWidgetState();
 }
 
 class _SignUpWidgetState extends State<SignUpWidget> {
-  @override
+  bool _showPassword = false;
+
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Theme.of(context).accentColor,
       body: SingleChildScrollView(
         child: Column(
-          children: [
+          children: <Widget>[
             Stack(
-              children: [
+              children: <Widget>[
                 Container(
                   width: double.infinity,
-                  padding: EdgeInsets.symmetric(
-                    vertical: 30.0,
-                    horizontal: 30.0,
-                  ),
-                  margin: EdgeInsets.symmetric(
-                    vertical: 65.0,
-                    horizontal: 50.0,
-                  ),
+                  padding: EdgeInsets.symmetric(vertical: 30, horizontal: 20),
+                  margin: EdgeInsets.symmetric(vertical: 65, horizontal: 50),
                   decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(
-                      20.0,
-                    ),
-                    color: Theme.of(context).primaryColor.withOpacity(
-                          0.6,
-                        ),
+                    borderRadius: BorderRadius.circular(20),
+                    color: Theme.of(context).primaryColor.withOpacity(0.6),
                   ),
                 ),
                 Container(
                   width: double.infinity,
-                  padding: EdgeInsets.symmetric(
-                    vertical: 30.0,
-                    horizontal: 30.0,
-                  ),
-                  margin: EdgeInsets.symmetric(
-                    vertical: 85.0,
-                    horizontal: 20.0,
-                  ),
+                  padding: EdgeInsets.symmetric(vertical: 30, horizontal: 30),
+                  margin: EdgeInsets.symmetric(vertical: 85, horizontal: 20),
                   decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(
-                      20.0,
-                    ),
+                    borderRadius: BorderRadius.circular(20),
                     color: Theme.of(context).primaryColor,
                     boxShadow: [
                       BoxShadow(
-                        color: Theme.of(context).hintColor.withOpacity(0.2),
-                        offset: Offset(0, 10),
-                        blurRadius: 20.0,
-                      ),
+                          color: Theme.of(context).hintColor.withOpacity(0.2),
+                          offset: Offset(0, 10),
+                          blurRadius: 20)
                     ],
                   ),
                   child: Column(
-                    children: [
-                      SizedBox(
-                        height: 25.0,
-                      ),
-                      Text(
-                        'SignUp',
-                        style: Theme.of(context).textTheme.headline3,
-                      ),
-                      SizedBox(
-                        height: 20.0,
-                      ),
-                      TextField(
-                        style: TextStyle(
-                          color: Theme.of(context).accentColor,
-                        ),
+                    children: <Widget>[
+                      SizedBox(height: 25),
+                      Text('Sign Up',
+                          style: Theme.of(context).textTheme.headline2),
+                      SizedBox(height: 20),
+                      new TextField(
+                        style: TextStyle(color: Theme.of(context).accentColor),
                         keyboardType: TextInputType.emailAddress,
-                        decoration: InputDecoration(
-                          hintText: 'EmailAddress,',
-                          hintStyle:
-                              Theme.of(context).textTheme.bodyText1!.merge(
-                                    TextStyle(
-                                      color: Theme.of(context).accentColor,
-                                    ),
-                                  ),
+                        decoration: new InputDecoration(
+                          hintText: 'Email Address',
+                          hintStyle: Theme.of(context)
+                              .textTheme
+                              .bodyText2!
+                              .merge(
+                                TextStyle(color: Theme.of(context).accentColor),
+                              ),
                           enabledBorder: UnderlineInputBorder(
-                            borderSide: BorderSide(
-                              color: Theme.of(context).accentColor.withOpacity(
-                                    0.2,
-                                  ),
-                            ),
+                              borderSide: BorderSide(
+                                  color: Theme.of(context)
+                                      .accentColor
+                                      .withOpacity(0.2))),
+                          focusedBorder: UnderlineInputBorder(
+                              borderSide: BorderSide(
+                                  color: Theme.of(context).accentColor)),
+                          prefixIcon: Icon(
+                            UiIcons.envelope,
+                            color: Theme.of(context).accentColor,
                           ),
                         ),
-                      )
+                      ),
+                      SizedBox(height: 20),
+                      new TextField(
+                        style: TextStyle(color: Theme.of(context).accentColor),
+                        keyboardType: TextInputType.text,
+                        obscureText: !_showPassword,
+                        decoration: new InputDecoration(
+                          hintText: 'Password',
+                          hintStyle: Theme.of(context)
+                              .textTheme
+                              .bodyText2!
+                              .merge(
+                                TextStyle(color: Theme.of(context).accentColor),
+                              ),
+                          enabledBorder: UnderlineInputBorder(
+                              borderSide: BorderSide(
+                                  color: Theme.of(context)
+                                      .accentColor
+                                      .withOpacity(0.2))),
+                          focusedBorder: UnderlineInputBorder(
+                              borderSide: BorderSide(
+                                  color: Theme.of(context).accentColor)),
+                          prefixIcon: Icon(
+                            UiIcons.padlock_1,
+                            color: Theme.of(context).accentColor,
+                          ),
+                          suffixIcon: IconButton(
+                            onPressed: () {
+                              setState(() {
+                                _showPassword = !_showPassword;
+                              });
+                            },
+                            color:
+                                Theme.of(context).accentColor.withOpacity(0.4),
+                            icon: Icon(_showPassword
+                                ? Icons.visibility_off
+                                : Icons.visibility),
+                          ),
+                        ),
+                      ),
+                      SizedBox(height: 20),
+                      new TextField(
+                        style: TextStyle(color: Theme.of(context).accentColor),
+                        keyboardType: TextInputType.text,
+                        obscureText: !_showPassword,
+                        decoration: new InputDecoration(
+                          hintText: 'Confirm Password',
+                          hintStyle: Theme.of(context)
+                              .textTheme
+                              .bodyText2!
+                              .merge(
+                                TextStyle(color: Theme.of(context).accentColor),
+                              ),
+                          enabledBorder: UnderlineInputBorder(
+                              borderSide: BorderSide(
+                                  color: Theme.of(context)
+                                      .accentColor
+                                      .withOpacity(0.2))),
+                          focusedBorder: UnderlineInputBorder(
+                              borderSide: BorderSide(
+                                  color: Theme.of(context).accentColor)),
+                          prefixIcon: Icon(
+                            UiIcons.padlock_1,
+                            color: Theme.of(context).accentColor,
+                          ),
+                          suffixIcon: IconButton(
+                            onPressed: () {
+                              setState(() {
+                                _showPassword = !_showPassword;
+                              });
+                            },
+                            color:
+                                Theme.of(context).accentColor.withOpacity(0.4),
+                            icon: Icon(_showPassword
+                                ? Icons.visibility_off
+                                : Icons.visibility),
+                          ),
+                        ),
+                      ),
+                      SizedBox(height: 40),
+                      OutlinedButton(
+                        // padding:
+                        //     EdgeInsets.symmetric(vertical: 12, horizontal: 70),
+                        onPressed: () {
+                          // Navigator.of(context).pushNamed('/SignIn');
+                        },
+                        child: Text(
+                          'Sign Up',
+                          style: Theme.of(context).textTheme.headline6!.merge(
+                                TextStyle(
+                                  color: Colors.teal,
+                                ),
+                              ),
+                        ),
+                        // color: Theme.of(context).accentColor,
+
+                        // shape: StadiumBorder(),
+                      ),
+                      SizedBox(height: 50),
+                      Text(
+                        'Or using social media',
+                        style: Theme.of(context).textTheme.bodyText2,
+                      ),
+                      SizedBox(height: 20),
+                      // new SocialMediaWidget()
                     ],
                   ),
                 ),
               ],
-            )
+            ),
+            OutlinedButton(
+              onPressed: () {
+                Navigator.of(context).pushNamed('/SignIn');
+              },
+              child: RichText(
+                text: TextSpan(
+                  style: Theme.of(context).textTheme.headline6!.merge(
+                        TextStyle(color: Theme.of(context).primaryColor),
+                      ),
+                  children: [
+                    TextSpan(text: 'Already have an account ?'),
+                    TextSpan(
+                        text: ' Sign In',
+                        style: TextStyle(fontWeight: FontWeight.w700)),
+                  ],
+                ),
+              ),
+            ),
           ],
         ),
       ),
