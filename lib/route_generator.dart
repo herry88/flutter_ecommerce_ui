@@ -1,15 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutteruinew/src/screen/onBoarding.dart';
+import 'package:flutteruinew/src/screen/signup/signup.dart';
 
 class RouteGenerator {
   static Route<dynamic> generateRoute(RouteSettings settings) {
-    // Getting arguments passed in while calling Navigator.pushNamed
-
     switch (settings.name) {
       case '/':
         return MaterialPageRoute(builder: (_) => OnBoardingWidget());
-      // case '/SignUp':
-      //   return MaterialPageRoute(builder: (_) => SignUpWidget());
+      case '/SignUp':
+        return MaterialPageRoute(builder: (_) => SignUpWidget());
       // case '/SignIn':
       //   return MaterialPageRoute(builder: (_) => SignInWidget());
       // case '/Categories':

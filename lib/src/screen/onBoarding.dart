@@ -101,7 +101,7 @@ class _OnBoardingWidgetState extends State<OnBoardingWidget> {
               padding: const EdgeInsets.symmetric(vertical: 50),
               child: TextButton(
                 onPressed: () {
-                  // Navigator.of(context).pushNamed('/SignUp');
+                  Navigator.of(context).pushNamed('/SignUp');
                 },
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
