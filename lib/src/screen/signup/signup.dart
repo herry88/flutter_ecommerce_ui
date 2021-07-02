@@ -77,21 +77,21 @@ class _SignUpWidgetState extends State<SignUpWidget> {
                         ),
                         keyboardType: TextInputType.emailAddress,
                         decoration: InputDecoration(
-                            hintText: 'EmailAddress,',
-                            hintStyle:
-                                Theme.of(context).textTheme.bodyText1!.merge(
-                                      TextStyle(
-                                        color: Theme.of(context).accentColor,
-                                      ),
+                          hintText: 'EmailAddress,',
+                          hintStyle:
+                              Theme.of(context).textTheme.bodyText1!.merge(
+                                    TextStyle(
+                                      color: Theme.of(context).accentColor,
                                     ),
-                            enabledBorder: UnderlineInputBorder(
-                              borderSide: BorderSide(
-                                color:
-                                    Theme.of(context).accentColor.withOpacity(
-                                          0.2,
-                                        ),
-                              ),
-                            )),
+                                  ),
+                          enabledBorder: UnderlineInputBorder(
+                            borderSide: BorderSide(
+                              color: Theme.of(context).accentColor.withOpacity(
+                                    0.2,
+                                  ),
+                            ),
+                          ),
+                        ),
                       )
                     ],
                   ),
