@@ -8,6 +8,8 @@ class OnBoardingWidget extends StatefulWidget {
 }
 
 class _OnBoardingWidgetState extends State<OnBoardingWidget> {
+  int _current = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -28,6 +30,11 @@ class _OnBoardingWidgetState extends State<OnBoardingWidget> {
                 style: ButtonStyle(
                   foregroundColor: MaterialStateProperty.all<Color>(
                     Colors.purpleAccent,
+                  ),
+                  shape: MaterialStateProperty.all(
+                    RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(30.0),
+                    ),
                   ),
                 ),
               ),
