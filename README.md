@@ -2,6 +2,10 @@
 
 A new Flutter project.
 
+# On Going Progress
+![onboarding](https://github.com/herry88/flutter_ecommerce_ui/blob/master/onBoardingPage.png "OnBoardingPage")
+
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
