@@ -4,7 +4,7 @@ A new Flutter project.
 
 # On Going Progress
 ![onboarding](https://github.com/herry88/flutter_ecommerce_ui/blob/master/onBoardingPage.png "OnBoardingPage")
-![onboarding](https://github.com/herry88/flutter_ecommerce_ui/blob/master/signup.png "SignUpPage")
+![signuppage](https://github.com/herry88/flutter_ecommerce_ui/blob/master/signup.png "SignUpPage")
 
 
 ## Getting Started
