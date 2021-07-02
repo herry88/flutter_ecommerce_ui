@@ -23,7 +23,50 @@ class _SignUpWidgetState extends State<SignUpWidget> {
                     vertical: 30.0,
                     horizontal: 30.0,
                   ),
-                )
+                  margin: EdgeInsets.symmetric(
+                    vertical: 65.0,
+                    horizontal: 50.0,
+                  ),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(
+                      20.0,
+                    ),
+                    color: Theme.of(context).primaryColor.withOpacity(
+                          0.6,
+                        ),
+                  ),
+                ),
+                Container(
+                  width: double.infinity,
+                  padding: EdgeInsets.symmetric(
+                    vertical: 30.0,
+                    horizontal: 30.0,
+                  ),
+                  margin: EdgeInsets.symmetric(
+                    vertical: 85.0,
+                    horizontal: 20.0,
+                  ),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(
+                      20.0,
+                    ),
+                    color: Theme.of(context).primaryColor,
+                    boxShadow: [
+                      BoxShadow(
+                        color: Theme.of(context).hintColor.withOpacity(0.2),
+                        offset: Offset(0, 10),
+                        blurRadius: 20.0,
+                      ),
+                    ],
+                  ),
+                  child: Column(
+                    children: [
+                      SizedBox(
+                        height: 20.0,
+                      ),
+                    ],
+                  ),
+                ),
               ],
             )
           ],
