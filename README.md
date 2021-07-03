@@ -3,6 +3,7 @@
 A new Flutter project.
 
 # On Going Progress
+<center>
 <table>
     <tr>
         <td>SignUp</td>
@@ -15,6 +16,7 @@ A new Flutter project.
          <td><img src="https://github.com/herry88/flutter_ecommerce_ui/blob/master/signin.png " data-canonical-src="https://github.com/herry88/flutter_ecommerce_ui/blob/master/signin.png " width="200" height="400" /></td>
     </tr>
 </table>
+</center>
 
 ## Getting Started
 
