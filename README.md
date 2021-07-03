@@ -3,9 +3,14 @@
 A new Flutter project.
 
 # On Going Progress
+<table>
+    <tr>
+        <td>SignUp</td>
+        <td><img src="https://github.com/herry88/flutter_ecommerce_ui/blob/master/signup.png" data-canonical-src="https://github.com/herry88/flutter_ecommerce_ui/blob/master/signup.png" width="200" height="400" /></td>
+    </tr>
+</table>
 ![onboarding](https://github.com/herry88/flutter_ecommerce_ui/blob/master/onBoardingPage.png "OnBoardingPage")
-![signuppage](https://github.com/herry88/flutter_ecommerce_ui/blob/master/signup.png =200x400 "SignUpPage")
-<img src="https://github.com/herry88/flutter_ecommerce_ui/blob/master/signup.png" data-canonical-src="https://github.com/herry88/flutter_ecommerce_ui/blob/master/signup.png" width="200" height="400" />
+
 ![signinpage](https://github.com/herry88/flutter_ecommerce_ui/blob/master/signin.png "SignInPage")
 
 
