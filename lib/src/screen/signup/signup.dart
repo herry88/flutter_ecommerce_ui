@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutteruinew/config/icons.dart';
+import 'package:flutteruinew/src/widget/socialmedia.dart';
 
 class SignUpWidget extends StatefulWidget {
   @override
@@ -44,8 +45,10 @@ class _SignUpWidgetState extends State<SignUpWidget> {
                   child: Column(
                     children: <Widget>[
                       SizedBox(height: 25),
-                      Text('Sign Up',
-                          style: Theme.of(context).textTheme.headline2),
+                      Text(
+                        'Sign Up',
+                        style: Theme.of(context).textTheme.headline2,
+                      ),
                       SizedBox(height: 20),
                       new TextField(
                         style: TextStyle(color: Theme.of(context).accentColor),
@@ -152,8 +155,6 @@ class _SignUpWidgetState extends State<SignUpWidget> {
                       ),
                       SizedBox(height: 40),
                       OutlinedButton(
-                        // padding:
-                        //     EdgeInsets.symmetric(vertical: 12, horizontal: 70),
                         onPressed: () {
                           // Navigator.of(context).pushNamed('/SignIn');
                         },
@@ -165,9 +166,6 @@ class _SignUpWidgetState extends State<SignUpWidget> {
                                 ),
                               ),
                         ),
-                        // color: Theme.of(context).accentColor,
-
-                        // shape: StadiumBorder(),
                       ),
                       SizedBox(height: 50),
                       Text(
@@ -175,7 +173,7 @@ class _SignUpWidgetState extends State<SignUpWidget> {
                         style: Theme.of(context).textTheme.bodyText2,
                       ),
                       SizedBox(height: 20),
-                      // new SocialMediaWidget()
+                      SocialMediaWidget()
                     ],
                   ),
                 ),
@@ -193,8 +191,11 @@ class _SignUpWidgetState extends State<SignUpWidget> {
                   children: [
                     TextSpan(text: 'Already have an account ?'),
                     TextSpan(
-                        text: ' Sign In',
-                        style: TextStyle(fontWeight: FontWeight.w700)),
+                      text: ' Sign In',
+                      style: TextStyle(
+                        fontWeight: FontWeight.w700,
+                      ),
+                    ),
                   ],
                 ),
               ),
