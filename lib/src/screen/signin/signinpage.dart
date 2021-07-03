@@ -45,8 +45,10 @@ class _SignInWidgetState extends State<SignInWidget> {
                   child: Column(
                     children: [
                       SizedBox(height: 25),
-                      Text('Sign In',
-                          style: Theme.of(context).textTheme.display3),
+                      Text(
+                        'Sign In',
+                        style: Theme.of(context).textTheme.headline2,
+                      ),
                       SizedBox(height: 20),
                       new TextField(
                         style: TextStyle(color: Theme.of(context).accentColor),
@@ -117,7 +119,7 @@ class _SignInWidgetState extends State<SignInWidget> {
                         onPressed: () {},
                         child: Text(
                           'Forgot your password ?',
-                          style: Theme.of(context).textTheme.body1,
+                          style: Theme.of(context).textTheme.bodyText2,
                         ),
                       ),
                       SizedBox(height: 30),
