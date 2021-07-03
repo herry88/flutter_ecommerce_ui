@@ -13,6 +13,10 @@ class RouteGenerator {
         return MaterialPageRoute(builder: (_) => SignUpWidget());
       case '/SignIn':
         return MaterialPageRoute(builder: (_) => SignInWidget());
+      case '/Tabs':
+        return MaterialPageRoute(builder: (_)=> TabsWidget(
+          currentTab:args,
+        ));
 
       default:
         // If there is no such named route in the switch statement, e.g. /third
