@@ -6,10 +6,15 @@ A new Flutter project.
 <table>
     <tr>
         <td>SignUp</td>
+        <td>OnBoarding</td>
+        <td>SignIn Page</td>
+    </tr>
+    <tr>
         <td><img src="https://github.com/herry88/flutter_ecommerce_ui/blob/master/signup.png" data-canonical-src="https://github.com/herry88/flutter_ecommerce_ui/blob/master/signup.png" width="200" height="400" /></td>
+        <td><img src="https://github.com/herry88/flutter_ecommerce_ui/blob/master/onBoardingPage.png" data-canonical-src="https://github.com/herry88/flutter_ecommerce_ui/blob/master/onBoardingPage.png" width="200" height="400" /></td>
     </tr>
 </table>
-![onboarding](https://github.com/herry88/flutter_ecommerce_ui/blob/master/onBoardingPage.png "OnBoardingPage")
+
 
 ![signinpage](https://github.com/herry88/flutter_ecommerce_ui/blob/master/signin.png "SignInPage")
 
