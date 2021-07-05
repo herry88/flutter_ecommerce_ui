@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutteruinew/src/screen/buttonNavigation/tab_down.dart';
 import 'package:flutteruinew/src/screen/onBoarding.dart';
 import 'package:flutteruinew/src/screen/signup/signup.dart';
 
@@ -14,9 +15,19 @@ class RouteGenerator {
       case '/SignIn':
         return MaterialPageRoute(builder: (_) => SignInWidget());
       case '/Tabs':
-        return MaterialPageRoute(builder: (_)=> TabsWidget(
-          currentTab:args,
-        ));
+        return MaterialPageRoute(builder: (_) => TabsWidget());
+      case "Account":
+        return MaterialPageRoute(
+            builder: (context) => Container(
+                color: Colors.blue, child: Center(child: Text("Account"))));
+      case "Settings":
+        return MaterialPageRoute(
+            builder: (context) => Container(
+                color: Colors.green, child: Center(child: Text("Settings"))));
+      case "Home":
+        return MaterialPageRoute(
+            builder: (context) => Container(
+                color: Colors.white, child: Center(child: Text("Home"))));
 
       default:
         // If there is no such named route in the switch statement, e.g. /third

@@ -126,14 +126,15 @@ class _SignInWidgetState extends State<SignInWidget> {
                       TextButton(
                         onPressed: () {
                           // 2 number refer the index of Home page
-                          // Navigator.of(context)
-                          //     .pushNamed('/Tabs', arguments: 2);
+                          Navigator.of(context)
+                              .pushNamed('/Tabs', arguments: 2);
                         },
                         child: Text(
                           'Login',
                           style: Theme.of(context).textTheme.headline6!.merge(
                                 TextStyle(
-                                    color: Theme.of(context).primaryColor),
+                                  color: Colors.teal,
+                                ),
                               ),
                         ),
                       ),
