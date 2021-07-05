@@ -16,11 +16,19 @@ class User {
   User.init();
   User.basic(this.name, this.avatar, this.userState);
 
-  User.advanced(this.name, this.email, this.gender, this.dateOfBirth, this.avatar, this.address, this.userState);
+  User.advanced(this.name, this.email, this.gender, this.dateOfBirth,
+      this.avatar, this.address, this.userState);
 
   User getCurrentUser() {
-    return User.advanced('Herry Prasetyo', 'herry081288@gmail.com', 'Male', DateTime(1988, 12, 08), 'img/user2.jpg',
-        'Bekasi Timur, 17111', UserState.available);
+    return User.advanced(
+      'Herry Prasetyo',
+      'herry081288@gmail.com',
+      'Male',
+      DateTime(1988, 12, 08),
+      'img/user2.jpg',
+      'Bekasi Timur, 17111',
+      UserState.available,
+    );
   }
 
   getDateOfBirth() {

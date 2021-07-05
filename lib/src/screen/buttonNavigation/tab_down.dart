@@ -7,10 +7,9 @@ import 'package:flutteruinew/src/widget/drawer.dart';
 
 // ignore: must_be_immutable
 class TabsWidget extends StatefulWidget {
- 
   String currentTitle = 'Home';
   Widget currentPage = HomeWidget();
-  
+
   @override
   _TabsWidgetState createState() => _TabsWidgetState();
 }
@@ -31,6 +30,11 @@ class _TabsWidgetState extends State<TabsWidget> {
       drawer: DrawerWidget(),
       appBar: AppBar(
         automaticallyImplyLeading: false,
+        leading: IconButton(
+            onPressed: () => _scaffoldKey.currentState!.openDrawer(),
+            icon: Icon(
+              Icons.sort,
+            )),
         backgroundColor: Colors.transparent,
         title: Text(
           widget.currentTitle,
