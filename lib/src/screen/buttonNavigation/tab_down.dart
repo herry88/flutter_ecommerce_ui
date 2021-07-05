@@ -3,6 +3,7 @@ import 'package:flutteruinew/config/icons.dart';
 import 'package:flutteruinew/src/home/home_widget.dart';
 import 'package:flutteruinew/src/screen/dashboard/dashboard.dart';
 import 'package:flutteruinew/src/screen/profile/profile.dart';
+import 'package:flutteruinew/src/widget/drawer.dart';
 
 // ignore: must_be_immutable
 class TabsWidget extends StatefulWidget {
@@ -27,6 +28,7 @@ class _TabsWidgetState extends State<TabsWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
       key: _scaffoldKey,
+      drawer: DrawerWidget(),
       appBar: AppBar(
         automaticallyImplyLeading: false,
         backgroundColor: Colors.transparent,
