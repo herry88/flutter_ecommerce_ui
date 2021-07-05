@@ -20,6 +20,14 @@ A new Flutter project.
          <td></td>
     </tr>
 </table>
+<table>
+    <tr>
+        <td>BottomNavigation</td>
+    </tr>
+    <tr>
+        <td><img src="https://github.com/herry88/flutter_ecommerce_ui/blob/master/bottomnav.png " data-canonical-src="https://github.com/herry88/flutter_ecommerce_ui/blob/master/bottomnav.png " width="200" height="400" /></td>
+    </tr>
+</table>
 </center>
 
 ## Getting Started
