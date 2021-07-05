@@ -6,14 +6,10 @@ import 'package:flutteruinew/src/screen/profile/profile.dart';
 
 // ignore: must_be_immutable
 class TabsWidget extends StatefulWidget {
-  int? currentTab = 2;
-  int? selectTab = 2;
+ 
   String currentTitle = 'Home';
   Widget currentPage = HomeWidget();
-  TabsWidget({
-    Key? key,
-    this.currentTab,
-  }) : super(key: key);
+  
   @override
   _TabsWidgetState createState() => _TabsWidgetState();
 }
