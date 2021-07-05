@@ -19,9 +19,11 @@ A new Flutter project.
 <table>
     <tr>
         <td>BottomNavigation</td>
+        <td>MenuDrawer</td>
     </tr>
     <tr>
         <td><img src="https://github.com/herry88/flutter_ecommerce_ui/blob/master/bottomnav.png " data-canonical-src="https://github.com/herry88/flutter_ecommerce_ui/blob/master/bottomnav.png " width="200" height="400" /></td>
+        <td><img src="https://github.com/herry88/flutter_ecommerce_ui/blob/master/bottomnav.png " data-canonical-src="https://github.com/herry88/flutter_ecommerce_ui/blob/master/drawermenu.png " width="200" height="400" /></td>
     </tr>
 </table>
 </center>
