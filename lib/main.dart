@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: Color(0xFF2C2C2C),
         accentColor: config.Colors().mainDarkColor(1),
         hintColor: config.Colors().secondDarkColor(1),
-        focusColor: config.Colors().accentDarkColor(1),
+        focusColor: config.Colors().secondDarkColor(1),
         textTheme: TextTheme(
           button: TextStyle(color: Color(0xFF252525)),
           headline5: TextStyle(
