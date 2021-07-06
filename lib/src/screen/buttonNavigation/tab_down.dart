@@ -4,6 +4,7 @@ import 'package:flutteruinew/src/home/home_widget.dart';
 import 'package:flutteruinew/src/screen/dashboard/dashboard.dart';
 import 'package:flutteruinew/src/screen/profile/profile.dart';
 import 'package:flutteruinew/src/widget/drawer.dart';
+import 'package:flutteruinew/src/widget/shoppingcart.dart';
 
 // ignore: must_be_immutable
 class TabsWidget extends StatefulWidget {
@@ -41,6 +42,10 @@ class _TabsWidgetState extends State<TabsWidget> {
         ),
         elevation: 0,
         actions: [
+          ShoppingCartButton(
+            iconColor: Theme.of(context).hintColor,
+            labelColor: Theme.of(context).accentColor,
+          ),
           Container(
             width: 30.0,
             height: 30.0,
