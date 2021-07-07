@@ -15,14 +15,9 @@ class HomeWidget extends StatefulWidget {
 
 class _HomeWidgetState extends State<HomeWidget> {
   ProductsList _productList = ProductsList();
-  List<String>? _demoData;
   @override
   void initState() {
-    // initializing state / demo data
-    var productList = _productList;
-    _demoData = [
-      productList.toString(),
-    ];
+   
     super.initState();
   }
 
