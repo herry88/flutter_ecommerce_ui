@@ -11,7 +11,6 @@ class SliderWidget extends StatefulWidget {
 }
 
 class _SliderWidgetState extends State<SliderWidget> {
-  int _current = 0;
   SliderList _sliderList = SliderList();
   @override
   Widget build(BuildContext context) {
@@ -26,11 +25,7 @@ class _SliderWidgetState extends State<SliderWidget> {
               seconds: 5,
             ),
             height: 240.0,
-            // onPageChanged: (index){
-            //     setState(() {
-            //       _current = index;
-            //     });
-            // }
+          
           ),
           items: _sliderList.list!.map((profix_0.Slider slide) {
             return Builder(

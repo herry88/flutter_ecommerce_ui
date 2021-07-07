@@ -36,6 +36,9 @@ class SearchWidget extends StatelessWidget {
               enabledBorder: UnderlineInputBorder(borderSide: BorderSide.none),
               focusedBorder: UnderlineInputBorder(borderSide: BorderSide.none),
             ),
+            style: TextStyle(
+              color: Colors.white,
+            ),
           ),
           IconButton(
             onPressed: () {
