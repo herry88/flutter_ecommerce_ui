@@ -28,13 +28,27 @@ class SearchWidget extends StatelessWidget {
             decoration: InputDecoration(
               contentPadding: EdgeInsets.all(12),
               hintText: 'Search',
-              hintStyle: TextStyle(color: Theme.of(context).primaryColor.withOpacity(0.8)),
-              prefixIcon: Icon(UiIcons.loupe, size: 20, color: Theme.of(context).primaryColor),
+              hintStyle: TextStyle(
+                  color: Theme.of(context).primaryColor.withOpacity(0.8)),
+              prefixIcon: Icon(UiIcons.loupe,
+                  size: 20, color: Theme.of(context).primaryColor),
               border: UnderlineInputBorder(borderSide: BorderSide.none),
               enabledBorder: UnderlineInputBorder(borderSide: BorderSide.none),
               focusedBorder: UnderlineInputBorder(borderSide: BorderSide.none),
             ),
-          )
+          ),
+          IconButton(
+            onPressed: () {
+              Scaffold.of(context).openEndDrawer();
+            },
+            icon: Icon(
+              UiIcons.settings_2,
+              size: 20.0,
+              color: Theme.of(context).primaryColor.withOpacity(
+                    0.8,
+                  ),
+            ),
+          ),
         ],
       ),
     );

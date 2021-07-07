@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutteruinew/src/widget/search.dart';
+import 'package:flutteruinew/src/widget/sliderwidget.dart';
 
 class HomeWidget extends StatefulWidget {
   const HomeWidget({Key? key}) : super(key: key);
@@ -19,6 +20,7 @@ class _HomeWidgetState extends State<HomeWidget> {
           ),
           child: SearchWidget(),
         ),
+        SliderWidget(),
       ],
     );
   }
