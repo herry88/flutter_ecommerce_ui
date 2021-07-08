@@ -24,6 +24,8 @@ class SubCategory {
 class CategoriesList {
   List<Category>? _list;
 
+  List<Category>? get list => _list;
+
   CategoriesList() {
     this._list = [
       new Category('Man', UiIcons.shoe_1, true, [
