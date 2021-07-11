@@ -87,7 +87,7 @@ class _HomeWidgetState extends State<HomeWidget>
                 color: Theme.of(context).hintColor,
               ),
               title: Text(
-                'Recommended For You',
+                'Recommended Product KW',
                 style: Theme.of(context).textTheme.headline4,
               ),
             ),
