@@ -146,6 +146,7 @@ flutter:
     - img/slider1.jpg
     - img/slider2.jpg
     - img/slider3.jpg
+    - img/under.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutteruinew/config/icons.dart';
 import 'package:flutteruinew/model/category.dart';
-
 import 'categoryIcon.dart';
 
 // ignore: must_be_immutable
@@ -40,6 +39,7 @@ class _CategoriesIconsCarouselWidgetState
             child: IconButton(
               onPressed: () {
                 Navigator.of(context).pushNamed('/Categories');
+               
               },
               icon: Icon(
                 UiIcons.settings_2,

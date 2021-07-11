@@ -46,7 +46,7 @@ class _HomeWidgetState extends State<HomeWidget>
     animationController.forward();
 
     _productsOfCategoryList = _categoriesList.list!.firstWhere((category) {
-      return category.selected;
+      return category.selected!;
     }).products;
 
     _productsOfBrandList = _brandsList!.list!.firstWhere((brand) {

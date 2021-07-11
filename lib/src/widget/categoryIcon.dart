@@ -33,7 +33,7 @@ class _CategoryIconWidgetState extends State<CategoryIconWidget>
       highlightColor: Theme.of(context).accentColor,
       onTap: () {
         setState(() {
-          widget.onPressed!(widget.category!.id);
+          widget.onPressed!(widget.category!.id!);
         });
       },
       child: AnimatedContainer(
@@ -41,7 +41,7 @@ class _CategoryIconWidgetState extends State<CategoryIconWidget>
         curve: Curves.easeInOut,
         padding: EdgeInsets.symmetric(horizontal: 15),
         decoration: BoxDecoration(
-          color: widget.category!.selected
+          color: widget.category!.selected!
               ? Theme.of(context).primaryColor
               : Colors.transparent,
           borderRadius: BorderRadius.circular(50),
@@ -49,10 +49,10 @@ class _CategoryIconWidgetState extends State<CategoryIconWidget>
         child: Row(
           children: <Widget>[
             Hero(
-              tag: widget.heroTag! + widget.category!.id,
+              tag: widget.heroTag! + widget.category!.id!,
               child: Icon(
                 widget.category!.icon,
-                color: widget.category!.selected
+                color: widget.category!.selected!
                     ? Theme.of(context).accentColor
                     : Theme.of(context).primaryColor,
                 size: 32,
@@ -64,7 +64,7 @@ class _CategoryIconWidgetState extends State<CategoryIconWidget>
               curve: Curves.easeInOut,
               vsync: this,
               child: Text(
-                widget.category!.selected ? widget.category!.name : '',
+                widget.category!.selected! ? widget.category!.name! : '',
                 style: TextStyle(
                     fontSize: 14, color: Theme.of(context).accentColor),
               ),

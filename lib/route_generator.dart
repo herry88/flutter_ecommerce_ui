@@ -3,13 +3,11 @@ import 'package:flutteruinew/src/screen/buttonNavigation/tab_down.dart';
 import 'package:flutteruinew/src/screen/onBoarding.dart';
 import 'package:flutteruinew/src/screen/signup/signup.dart';
 
-import 'model/routeargument.dart';
 import 'src/screen/categories/categories.dart';
 import 'src/screen/signin/signinpage.dart';
 
 class RouteGenerator {
   static Route<dynamic> generateRoute(RouteSettings settings) {
-    final args = settings.arguments;
     switch (settings.name) {
       case '/':
         return MaterialPageRoute(builder: (_) => OnBoardingWidget());
@@ -20,7 +18,7 @@ class RouteGenerator {
       case '/Tabs':
         return MaterialPageRoute(builder: (_) => TabsWidget());
       case '/Categories':
-        return MaterialPageRoute(builder: (_)=> CategoryWidget(routeArgument: args as RouteArgument));
+        return MaterialPageRoute(builder: (_)=> CategoryWidget());
      
 
       default:

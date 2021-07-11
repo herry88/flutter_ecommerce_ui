@@ -3,11 +3,11 @@ import 'package:flutteruinew/model/product.dart';
 import 'package:flutteruinew/config/icons.dart';
 
 class Category {
-  String id = UniqueKey().toString();
-  String name;
-  bool selected;
-  IconData icon;
-  List<Product> products;
+  String? id = UniqueKey().toString();
+  String? name;
+  bool? selected;
+  IconData? icon;
+  List<Product>? products;
 
   Category(this.name, this.icon, this.selected, this.products);
 }
