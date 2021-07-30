@@ -18,8 +18,7 @@ class RouteGenerator {
       case '/Tabs':
         return MaterialPageRoute(builder: (_) => TabsWidget());
       case '/Categories':
-        return MaterialPageRoute(builder: (_)=> CategoryWidget());
-     
+        return MaterialPageRoute(builder: (_) => CategoryWidget());
 
       default:
         // If there is no such named route in the switch statement, e.g. /third
@@ -30,11 +29,11 @@ class RouteGenerator {
   static Route<dynamic> _errorRoute() {
     return MaterialPageRoute(builder: (_) {
       return Scaffold(
-        appBar: AppBar(
-          title: Text('Page Not Found'),
-        ),
         body: Center(
-          child: Text('Page Not Found'),
+          child: Image.network(
+            'https://bengkulu.bpk.go.id/wp-content/uploads/2017/09/Under-construction.png',
+            fit: BoxFit.cover,
+          ),
         ),
       );
     });
